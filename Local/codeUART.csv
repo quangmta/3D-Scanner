@@ -1,0 +1,15 @@
+read enconder, 0x40
+led 1 on, 0x89
+led 1 off, 0x81
+led 2 on, 0x8A
+led 2 off, 0x82
+led 3 on, 0x8B
+led 3 off, 0x83
+motor disable, 0x20
+motor enable not run, 0x00
+motor run full, 0x02
+1 run (1/2), 0x12
+2 run (1/4), 0x0A
+1-2 run (1/8), 0x1A
+1-2-3 run (1/16), 0x1E
+motor run reverse, 0x03 (+1)
