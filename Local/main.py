@@ -35,7 +35,10 @@ while True:
     elif operation == '2':
         SSH.capture_single_image(localpath)
     elif operation == '3':
-        SSH.capture_image_full(localpath)
+        step = SSH.choose_step()
+        dir = SSH.choose_direction()
+        angle = SSH.choose_angle()
+        SSH.capture_image_full(step,dir,angle,localpath)
     elif operation == '4':
         SSH.rotate_platform()
     # elif operation == '10':

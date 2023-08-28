@@ -89,10 +89,7 @@ class SSH_local:
     def control_led(self,led_number,status):
         self.ssh.exec_command(self.path_run+'0 0 0 '+str(-led_number*2+status))
         
-    def capture_image_full(self,localpath):
-        step = self.choose_step()
-        dir = self.choose_direction()
-        angle = self.choose_angle()
+    def capture_image_full(self,step,dir,angle,localpath):
         loop = self.get_loop_from_angle(angle,step)
         if abs(angle - 360) < 0.01:
             loop -= 1
