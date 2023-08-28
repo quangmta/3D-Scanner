@@ -37,7 +37,7 @@ while True:
     elif operation == '3':
         step = SSH.choose_step()
         dir = SSH.choose_direction()
-        angle = SSH.choose_angle() 
+        angle = SSH.choose_angle()
         SSH.capture_image_full(step,dir,angle,localpath)
     elif operation == '4':
         SSH.rotate_platform()
