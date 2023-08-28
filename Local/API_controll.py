@@ -92,7 +92,7 @@ class SSH_local:
     def capture_image_full(self,step,dir,angle,localpath):
         loop = self.get_loop_from_angle(angle,step)
         if abs(angle - 360) < 0.01:
-            loop -= 1
+            loop -= 1 
         
         file_name = datetime.now().strftime("%d%m%Y-%H%M")        
         print("Folder save Images: ",file_name)
